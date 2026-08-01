@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.hover-3d > div {
+  user-select: none;
+}
+
+.hover-3d {
+  cursor: pointer;
+}
