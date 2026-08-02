@@ -19,13 +19,12 @@ function Freebook() {
 
   return (
     <div className="py-10">
-     
       <div className="w-full px-6 py-10 md:px-16 lg:px-24">
-        <h1 className="text-5xl font-extrabold tracking-tight text-slate-900">
+        <h1 className="text-5xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">
           Free Offered Books
         </h1>
 
-        <p className="mt-4 text-lg text-gray-600 leading-8">
+        <p className="mt-4 text-lg text-gray-600 dark:text-slate-300 leading-8">
           Discover our collection of free books and start your learning journey
           with carefully selected books from different categories.
         </p>
@@ -58,7 +57,7 @@ function Freebook() {
           {books.map((book) => (
             <SwiperSlide key={book.id}>
               <div className="hover-3d w-96 mx-auto py-10">
-                <div className="card bg-base-100 shadow-xl rounded-2xl overflow-hidden">
+                <div className="card bg-base-100 dark:bg-slate-950 shadow-xl rounded-2xl overflow-hidden">
                   <figure>
                     <img
                       src={book.image}
@@ -68,7 +67,7 @@ function Freebook() {
                   </figure>
 
                   <div className="card-body">
-                    <h2 className="card-title justify-between text-xl font-bold text-gray-900">
+                    <h2 className="card-title justify-between text-xl font-bold text-gray-900 dark:text-slate-100">
                       {book.name}
 
                       <span className="badge badge-secondary uppercase">
@@ -76,17 +75,17 @@ function Freebook() {
                       </span>
                     </h2>
 
-                    <p className="text-gray-600 text-sm leading-6 line-clamp-2">
+                    <p className="text-gray-600 dark:text-slate-300 text-sm leading-6 line-clamp-2">
                       {book.title}
                     </p>
 
                     <div className="flex justify-between items-center mt-3">
-                      <span className="text-2xl font-black text-red-600">
+                      <span className="text-2xl font-black text-red-600 dark:text-red-400">
                         {book.price}
                       </span>
 
                       <button className="btn btn-primary transition-transform duration-200 ease-in-out active:scale-95">
-                       View Book
+                        View Book
                       </button>
                     </div>
                   </div>

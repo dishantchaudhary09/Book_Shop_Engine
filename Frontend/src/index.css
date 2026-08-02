@@ -1,5 +1,16 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    @apply min-h-screen bg-white text-slate-900;
+  }
+
+  html.dark body {
+    @apply bg-slate-950 text-slate-100;
+  }
+}
 
 .hover-3d > div {
   user-select: none;
