@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import axios from 'axios';
+import api from "../api";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -21,7 +21,7 @@ function Courses() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/paid-books");
+        const res = await api.get("/paid-books");
         console.log(res.data);
         setPaid(res.data)
       } catch (error) {

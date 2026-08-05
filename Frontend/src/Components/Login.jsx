@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import api from "../Api/api.js";
 import { useNavigate } from "react-router-dom";
 import Createaccount from "./Createaccount.jsx";
 import { useAuth } from "../Context/Authprovider";
@@ -29,8 +29,8 @@ const [authUser, setAuthUser] = useAuth();
     };
 
     try {
-      const res = await axios.post(
-        "http://localhost:5000/create-user/login",
+      const res = await api.post(
+        "/create-user/login",
         userInfo,
       );
 

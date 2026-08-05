@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import api from "../Api/api.js";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
@@ -20,7 +20,7 @@ function Freebook() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/free-books");
+        const res = await api.get("/free-books");
         console.log(res.data);
         setBooks(res.data);
       } catch (error) {

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import axios from "axios";
+import api from "../Api/api.js";
 import { toast } from "react-hot-toast";
+import api from "../Api/api.js";
 
 function ForgotPassword() {
   const [email, setEmail] = useState("");
@@ -9,8 +10,8 @@ function ForgotPassword() {
     e.preventDefault();
 
     try {
-      const res = await axios.post(
-        "http://localhost:5000/create-user/forgot-password",
+      const res = await api.post(
+        "/create-user/forgot-password",
         { email },
       );
 

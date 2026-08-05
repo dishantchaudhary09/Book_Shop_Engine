@@ -11,7 +11,11 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://readandrelax.netlify.app/",
+  }),
+);
 app.use(express.json());
 
 // Routes
