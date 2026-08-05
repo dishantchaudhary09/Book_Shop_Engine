@@ -8,6 +8,9 @@ import {
 } from "react-icons/fa";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import { NavLink } from "react-router-dom";
+import { useAuth } from "../Context/Authprovider";
+
 
 const features = [
   {
@@ -51,6 +54,14 @@ const testimonials = [
 ];
 
 const About = () => {
+  const [authUser] = useAuth();
+
+  const handleBrowseBooks = (e) => {
+    if (!authUser) {
+      e.preventDefault();
+      document.getElementById("my_modal_3")?.showModal();
+    }
+  };
   return (
     <>
       <Navbar />
@@ -69,7 +80,7 @@ const About = () => {
           </p>
 
           <button className="btn mt-10 bg-gradient-to-r from-cyan-500 to-blue-600 border-0 rounded-xl text-white">
-            Explore Books
+            <a href="/"> Explore Books</a>
           </button>
         </section>
 
@@ -182,7 +193,9 @@ const About = () => {
             </p>
 
             <button className="btn mt-8 bg-white text-slate-900 border-0 hover:bg-slate-200 rounded-xl">
-              <a href="/">Browse Books</a>
+              <NavLink to="/courses" onClick={handleBrowseBooks}>
+                Browse Books
+              </NavLink>
             </button>
           </div>
         </section>

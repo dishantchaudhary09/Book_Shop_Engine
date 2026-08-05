@@ -113,21 +113,21 @@ const Contact = () => {
                 <div className="flex gap-5">
                   <a
                     href="#"
-                    className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-cyan-500 transition"
+                    className="w-12 h-12 rounded-full bg-slate-800 dark:bg-slate-700 text-white dark:text-white flex items-center justify-center hover:bg-cyan-500 transition"
                   >
                     <FaGithub />
                   </a>
 
                   <a
                     href="#"
-                    className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-cyan-500 transition"
+                    className="w-12 h-12 rounded-full bg-slate-800 dark:bg-slate-700 text-white dark:text-white flex items-center justify-center hover:bg-cyan-500 transition"
                   >
                     <FaLinkedin />
                   </a>
 
                   <a
                     href="#"
-                    className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center hover:bg-cyan-500 transition"
+                    className="w-12 h-12 rounded-full bg-slate-800 dark:bg-slate-700 text-white dark:text-white flex items-center justify-center hover:bg-cyan-500 transition"
                   >
                     <FaInstagram />
                   </a>

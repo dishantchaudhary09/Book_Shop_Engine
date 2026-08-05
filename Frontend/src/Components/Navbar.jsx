@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Login from "./Login";
-
+import { useAuth } from "../Context/Authprovider.jsx";
+import Logout from "./Logout.jsx";
+import { useSearch } from "../Context/SearchContext.jsx";
 const navLinks = [
   { to: "/", label: "Home" },
   { to: "/courses", label: "Course" },
@@ -10,6 +12,17 @@ const navLinks = [
 ];
 
 function Navbar() {
+  const [authUser, setAuthUser] = useAuth();
+  const { search, setSearch } = useSearch();
+
+  const handleCoursesClick = (e) => {
+    if (!authUser) {
+      e.preventDefault();
+      document.getElementById("my_modal_3")?.showModal();
+    }
+  };
+
+  const handleSearch = (e) => { setSearch(e.target.value) };
   const [Sticky, setSticky] = useState(false);
   const [theme, setTheme] = useState(
     () => localStorage.getItem("theme") || "light",
@@ -35,6 +48,7 @@ function Navbar() {
       <NavLink
         to={to}
         end
+        onClick={label === "Course" ? handleCoursesClick : undefined}
         className={({ isActive }) =>
           `relative inline-flex items-center rounded-full px-4 py-2 text-sm font-medium transition duration-300 ${
             isActive
@@ -117,7 +131,13 @@ function Navbar() {
                     <path d="m21 21-4.3-4.3"></path>
                   </g>
                 </svg>
-                <input type="search" required placeholder="Search" />
+                <input
+                  type="search"
+                  value={search}
+                  onChange={handleSearch}
+                  required
+                  placeholder="Search"
+                />
               </label>
             </div>
             {/* //Dark Mode */}
@@ -149,12 +169,18 @@ function Navbar() {
             </div>
           </div>
           <div>
-            <a
-              onClick={() => document.getElementById("my_modal_3").showModal()}
-              className="btn bg-black text-white px-3 py-2 rounded cursor-pointer ml-8 hover:bg-slate-300 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-300 duration-300"
-            >
-              Login
-            </a>
+            {authUser ? (
+              <Logout />
+            ) : (
+              <a
+                onClick={() =>
+                  document.getElementById("my_modal_3").showModal()
+                }
+                className="btn bg-black text-white px-3 py-2 rounded cursor-pointer ml-8 hover:bg-slate-300 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-300 duration-300"
+              >
+                Login
+              </a>
+            )}
             <Login />
           </div>
         </div>
