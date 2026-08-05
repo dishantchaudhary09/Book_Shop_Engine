@@ -19,6 +19,10 @@ app.use(
 app.use(express.json());
 
 // Routes
+
+app.get("/", (req, res) => {
+  res.send("Backend is working 🚀");
+});
 app.use("/paid-books", paidBookRoute);
 app.use("/free-books", freeBookRoute);
 app.use("/create-user", userRegister);

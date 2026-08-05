@@ -16,14 +16,19 @@ export const signup = async (req, res) => {
     });
 
     await createUser.save();
-    res.status(201).json({ Message: "User created Successfully!", createUser:{
-      _id: createUser._id,
-      name: createUser.name,
-      email: createUser.email,
-    }});
+    res.status(201).json({
+      Message: "User created Successfully!",
+      createUser: {
+        _id: createUser._id,
+        name: createUser.name,
+        email: createUser.email,
+      },
+    });
   } catch (error) {
-    console.log(error);
-    res.status(500).json({ Message: "Internal Server Error :(" });
+    console.error(error);
+    return res.status(500).json({
+      Message: error.message,
+    });
   }
 };
 
@@ -51,7 +56,9 @@ export const login = async (req, res) => {
       },
     });
   } catch (error) {
-    console.log("error", error.message);
-    return res.status(400).json({ Message: "Internal Server Error" });
+    console.error(error);
+    return res.status(500).json({
+      Message: error.message,
+    });
   }
 };
