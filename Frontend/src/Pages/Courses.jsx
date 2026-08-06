@@ -10,7 +10,6 @@ import "swiper/css/navigation";
 import { useSearch } from "../Context/SearchContext.jsx";
 
 function Courses() {
- 
   const [paid, setPaid] = useState([]);
   const { search } = useSearch();
   const filteredBooks = paid.filter(
@@ -23,23 +22,22 @@ function Courses() {
       try {
         const res = await api.get("/paid-books");
         console.log(res.data);
-        setPaid(res.data)
+        setPaid(res.data);
       } catch (error) {
         console.log(error);
-        }
-    }
+      }
+    };
     getBook();
-
   }, []);
 
   return (
     <div>
       <Navbar />
-      <div className="pt-28 px-16 flex flex-col items-center gap-6 bg-base-100 dark:bg-slate-950 min-h-screen">
-        <h1 className="text-5xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 text-center">
+      <div className="pt-24 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20 flex flex-col items-center gap-6 bg-base-100 dark:bg-slate-950 min-h-screen">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 text-center">
           We're delighted to have you here :)
         </h1>
-        <p className="mt-4 text-lg text-gray-600 dark:text-slate-300 leading-8 text-justify max-w-8xl">
+        <p className="mt-4 text-base sm:text-lg md:text-xl text-gray-600 dark:text-slate-300 leading-8 text-center md:text-left max-w-4xl">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam optio
           itaque harum quae numquam aspernatur velit ducimus perferendis
           praesentium ad, dignissimos exercitationem sed nihil odio recusandae,
@@ -53,7 +51,7 @@ function Courses() {
           <a href="/">Home</a>
         </button>
 
-        <div className="w-full px-6 md:px-16 lg:px-24">
+        <div className="w-full px-0 sm:px-4 md:px-6 lg:px-8">
           {filteredBooks.length === 0 ? (
             <div className="text-center py-10 text-gray-500 dark:text-slate-300">
               No books...
@@ -88,8 +86,8 @@ function Courses() {
               ) : (
                 filteredBooks.map((course) => (
                   <SwiperSlide key={course.id}>
-                    <div className="hover-3d w-96 mx-auto py-10">
-                      <div className="card bg-base-100 dark:bg-slate-950 shadow-xl rounded-2xl overflow-hidden">
+                    <div className="hover-3d w-full max-w-sm sm:max-w-md mx-auto py-6">
+                      <div className="card bg-base-100 dark:bg-slate-950 shadow-xl rounded-3xl overflow-hidden">
                         <figure>
                           <img
                             src={course.image}
@@ -98,20 +96,20 @@ function Courses() {
                           />
                         </figure>
                         <div className="card-body">
-                          <h2 className="card-title justify-between text-xl font-bold text-gray-900 dark:text-slate-100">
+                          <h2 className="card-title justify-between text-lg sm:text-xl font-bold text-gray-900 dark:text-slate-100">
                             {course.name}
                             <span className="badge badge-secondary uppercase">
                               {course.category}
                             </span>
                           </h2>
-                          <p className="text-gray-600 dark:text-slate-300 text-sm leading-6 line-clamp-2">
+                          <p className="text-gray-600 dark:text-slate-300 text-sm sm:text-base leading-6 line-clamp-2">
                             {course.title}
                           </p>
-                          <div className="flex justify-between items-center mt-3">
-                            <span className="text-2xl font-black text-red-600">
+                          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mt-3">
+                            <span className="text-xl sm:text-2xl font-black text-red-600">
                               {course.price}
                             </span>
-                            <button className="btn btn-primary transition-transform duration-200 ease-in-out active:scale-95 ">
+                            <button className="btn btn-primary w-full sm:w-auto transition-transform duration-200 ease-in-out active:scale-95">
                               Buy Now
                             </button>
                           </div>
