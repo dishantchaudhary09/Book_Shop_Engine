@@ -7,7 +7,7 @@ import toast, { Toaster } from "react-hot-toast";
 import ForgotPassword from "./Forgetpassword.jsx";
 function Login() {
   const navigate = useNavigate();
-const [authUser, setAuthUser] = useAuth();
+  const [authUser, setAuthUser] = useAuth();
   const [login, setLogin] = useState({
     email: "",
     password: "",
@@ -29,10 +29,8 @@ const [authUser, setAuthUser] = useAuth();
     };
 
     try {
-      const res = await api.post(
-        "/create-user/login",
-        userInfo,
-      );
+      console.log("login payload", userInfo);
+      const res = await api.post("/create-user/login", userInfo);
 
       console.log(res.data);
 

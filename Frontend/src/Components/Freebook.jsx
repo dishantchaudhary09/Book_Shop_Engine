@@ -8,23 +8,24 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { useSearch } from "../Context/SearchContext";
+import axios from "axios";
 
 function Freebook() {
   const [books, setBooks] = useState([]);
-  const {search } = useSearch();
- const filteredBooks = books.filter(
-   (book) =>
-     (book.name || "").toLowerCase().includes((search || "").toLowerCase()),
-   console.log(books),
- );
+  const [fetchError, setFetchError] = useState(null);
+  const { search } = useSearch();
+  const filteredBooks = books.filter((book) =>
+    (book.name || "").toLowerCase().includes((search || "").toLowerCase()),
+  );
   useEffect(() => {
     const getData = async () => {
       try {
         const res = await api.get("/free-books");
-        console.log(res.data);
+        console.log("free-books response", res.data);
         setBooks(res.data);
       } catch (error) {
         console.log(error);
+        setFetchError("Unable to fetch free books");
       }
     };
 
@@ -45,7 +46,11 @@ function Freebook() {
       </div>
 
       <div className="px-6 md:px-16 lg:px-24">
-        {filteredBooks.length === 0 ? (
+        {fetchError ? (
+          <div className="text-center py-10 text-red-500 dark:text-red-300">
+            Error: {fetchError}
+          </div>
+        ) : filteredBooks.length === 0 ? (
           <div className="text-center py-10 text-gray-500 dark:text-slate-300">
             No books...
           </div>

@@ -1,0 +1,132 @@
+[{
+  "_id": {
+    "$oid": "6a7199fe0ffa866c60162b68"
+  },
+  "id": 1,
+  "name": "Atomic Habits",
+  "title": "An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+  "price": "Free",
+  "category": "Self Help",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a7199fe0ffa866c60162b69"
+  },
+  "id": 2,
+  "name": "The Psychology of Money",
+  "title": "Timeless Lessons on Wealth, Greed, and Happiness",
+  "price": "Free",
+  "category": "Finance",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/71g2ednj0JL.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a7199fe0ffa866c60162b6a"
+  },
+  "id": 3,
+  "name": "Deep Work",
+  "title": "Rules for Focused Success in a Distracted World",
+  "price": "Free",
+  "category": "Productivity",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/71QKQ9mwV7L.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a7199fe0ffa866c60162b6b"
+  },
+  "id": 4,
+  "name": "Clean Code",
+  "title": "A Handbook of Agile Software Craftsmanship",
+  "price": "Free",
+  "category": "Programming",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/41xShlnTZTL.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a7199fe0ffa866c60162b6c"
+  },
+  "id": 5,
+  "name": "The Alchemist",
+  "title": "A Fable About Following Your Dream",
+  "price": "Free",
+  "category": "Fiction",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a7199fe0ffa866c60162b6d"
+  },
+  "id": 6,
+  "name": "Rich Dad Poor Dad",
+  "title": "What the Rich Teach Their Kids About Money",
+  "price": "Free",
+  "category": "Finance",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/81bsw6fnUiL.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a7199fe0ffa866c60162b6e"
+  },
+  "id": 7,
+  "name": "Think and Grow Rich",
+  "title": "The Classic Guide to Wealth and Success",
+  "price": "Free",
+  "category": "Self Help",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/71UypkUjStL.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a7199fe0ffa866c60162b6f"
+  },
+  "id": 8,
+  "name": "Ikigai",
+  "title": "The Japanese Secret to a Long and Happy Life",
+  "price": "Free",
+  "category": "Lifestyle",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/81l3rZK4lnL.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a7199fe0ffa866c60162b70"
+  },
+  "id": 9,
+  "name": "The Pragmatic Programmer",
+  "title": "Your Journey to Mastery",
+  "price": "Free",
+  "category": "Programming",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/518FqJvR9aL.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a7199fe0ffa866c60162b71"
+  },
+  "id": 10,
+  "name": "Harry Potter and the Philosopher's Stone",
+  "title": "Book 1 of the Harry Potter Series",
+  "price": "Free",
+  "category": "Fantasy",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/81YOuOGFCJL.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a7199fe0ffa866c60162b72"
+  },
+  "id": 11,
+  "name": "Zero to One",
+  "title": "Notes on Startups, or How to Build the Future",
+  "price": "Free",
+  "category": "Business",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/71m-MxdJ2WL.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a7199fe0ffa866c60162b73"
+  },
+  "id": 12,
+  "name": "The Lean Startup",
+  "title": "How Today's Entrepreneurs Use Continuous Innovation",
+  "price": "Free",
+  "category": "Business",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
+}]

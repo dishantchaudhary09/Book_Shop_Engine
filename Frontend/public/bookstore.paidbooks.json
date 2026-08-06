@@ -1,0 +1,165 @@
+[{
+  "_id": {
+    "$oid": "6a719a0b0ffa866c60162b75"
+  },
+  "id": 13,
+  "name": "The Power of Now",
+  "title": "A Guide to Spiritual Enlightenment",
+  "price": 399,
+  "category": "Self Help",
+  "image": "https://covers.openlibrary.org/b/isbn/9781577314806-L.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a719a0b0ffa866c60162b76"
+  },
+  "id": 14,
+  "name": "Habits of Effective People",
+  "title": "Powerful Lessons in Personal Change",
+  "price": 549,
+  "category": "Self Help",
+  "image": "https://covers.openlibrary.org/b/isbn/9781982137274-L.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a719a0b0ffa866c60162b77"
+  },
+  "id": 15,
+  "name": "The Intelligent Investor",
+  "title": "The Definitive Book on Value Investing",
+  "price": 699,
+  "category": "Finance",
+  "image": "https://covers.openlibrary.org/b/isbn/9780060555665-L.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a719a0b0ffa866c60162b78"
+  },
+  "id": 16,
+  "name": "Eloquent JavaScript",
+  "title": "A Modern Introduction to Programming",
+  "price": 599,
+  "category": "Programming",
+  "image": "https://covers.openlibrary.org/b/isbn/9781593279509-L.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a719a0b0ffa866c60162b79"
+  },
+  "id": 17,
+  "name": "You Don't Know JS Yet",
+  "title": "Get Started with JavaScript",
+  "price": 449,
+  "category": "Programming",
+  "image": "https://covers.openlibrary.org/b/isbn/9781098124045-L.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a719a0b0ffa866c60162b7a"
+  },
+  "id": 18,
+  "name": "The Hobbit",
+  "title": "A Fantasy Adventure Novel",
+  "price": 499,
+  "category": "Fantasy",
+  "image": "https://covers.openlibrary.org/b/isbn/9780547928227-L.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a719a0b0ffa866c60162b7b"
+  },
+  "id": 19,
+  "name": "The Silent Patient",
+  "title": "A Psychological Thriller",
+  "price": 429,
+  "category": "Thriller",
+  "image": "https://covers.openlibrary.org/b/isbn/9781250301697-L.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a719a0b0ffa866c60162b7c"
+  },
+  "id": 20,
+  "name": "Sapiens",
+  "title": "A Brief History of Humankind",
+  "price": 649,
+  "category": "History",
+  "image": "https://covers.openlibrary.org/b/isbn/9780062316097-L.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a719a0b0ffa866c60162b7d"
+  },
+  "id": 21,
+  "name": "The Midnight Library",
+  "title": "A Novel About Infinite Possibilities",
+  "price": 459,
+  "category": "Fiction",
+  "image": "https://covers.openlibrary.org/b/isbn/9780525559474-L.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a719a0b0ffa866c60162b7e"
+  },
+  "id": 22,
+  "name": "The Mountain Is You",
+  "title": "Transforming Self-Sabotage into Self-Mastery",
+  "price": 379,
+  "category": "Self Help",
+  "image": "https://covers.openlibrary.org/b/isbn/9781949759228-L.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a719a0b0ffa866c60162b7f"
+  },
+  "id": 23,
+  "name": "Cracking the Coding Interview",
+  "title": "189 Programming Questions and Solutions",
+  "price": 899,
+  "category": "Programming",
+  "image": "https://covers.openlibrary.org/b/isbn/9780984782857-L.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a719a0b0ffa866c60162b80"
+  },
+  "id": 24,
+  "name": "Think Like a Monk",
+  "title": "Train Your Mind for Peace and Purpose",
+  "price": 499,
+  "category": "Self Help",
+  "image": "https://covers.openlibrary.org/b/isbn/9781982134488-L.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a719a0b0ffa866c60162b81"
+  },
+  "id": 25,
+  "name": "The Subtle Art of Not Giving a F*ck",
+  "title": "A Counterintuitive Approach to Living a Good Life",
+  "price": 449,
+  "category": "Self Help",
+  "image": "https://covers.openlibrary.org/b/isbn/9780062457714-L.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a719a0b0ffa866c60162b82"
+  },
+  "id": 26,
+  "name": "Harry Potter and the Chamber of Secrets",
+  "title": "Book 2 of the Harry Potter Series",
+  "price": 599,
+  "category": "Fantasy",
+  "image": "https://covers.openlibrary.org/b/isbn/9780439064873-L.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a719a0b0ffa866c60162b83"
+  },
+  "id": 27,
+  "name": "The Clean Coder",
+  "title": "A Code of Conduct for Professional Programmers",
+  "price": 649,
+  "category": "Programming",
+  "image": "https://covers.openlibrary.org/b/isbn/9780137081073-L.jpg"
+}]
